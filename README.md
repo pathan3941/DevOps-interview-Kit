@@ -147,6 +147,15 @@ Q-What is a branch in Git?
 
 A-A branch is like a separate line of development. It lets you work on new features without changing the main codebase.
 
+How do you handle conflicts in Git?
+
+Answer: Conflicts in Git occur when changes from different branches clash. To resolve conflicts, you need to manually edit the conflicted files, marking the changes to keep and removing the conflicting markers, and then commit the resolved changes.
+
+What is Git rebase, and how is it different from Git merge?
+
+Answer: Git rebase is a command that allows you to move or combine a sequence of commits to a new base commit. It is different from Git merge in that rebase rewrites the commit history to create a linear sequence of commits, while merge preserves the history as is and creates a new merge commit. Rebase is useful for keeping a clean and linear project history.
+
+
 ##################GIT########################
 _____________________________________________________________________________________
 ##################Terraform########################
@@ -415,3 +424,30 @@ What is the difference between a StatefulSet and a Deployment in Kubernetes?
 
 A- A StatefulSet is used for stateful applications that require stable, unique network identifiers and persistent storage. It manages Pods that are not interchangeable, whereas a Deployment is used for stateless applications and manages interchangeable Pods.
 
+Question: What is the difference between an Ingress and a Load Balancer in Kubernetes?
+
+Answer: An Ingress in Kubernetes is an API object that manages external access to services within a cluster, typically HTTP and HTTPS traffic. It provides features like load balancing, SSL termination, and path-based routing. A LoadBalancer, on the other hand, creates an external load balancer that routes traffic to a service, typically at the TCP/UDP level. Ingress is more flexible and feature-rich, while Load Balancer provides a simpler and more direct way to expose services.
+
+Question: How do you implement blue-green deployments in a Kubernetes cluster?
+
+Answer: To implement blue-green deployments in a Kubernetes cluster: Create two environments: Deploy two identical environments (blue and green) with the application.
+
+Update one environment: Deploy the new version of the application to the green environment while the blue environment remains live.
+
+Switch traffic: Update the service to route traffic to the green environment.
+
+Monitor: Monitor the green environment for any issues.
+
+Rollback if necessary: If issues are found, switch traffic back to the blue environment
+
+Question:How do you manage secrets in a DevOps environment?
+
+Answer: Managing secrets involves securely storing and accessing sensitive information, such as API keys, passwords, and certificates. Best practices include:
+
+Using a secrets management tool: Tools like HashiCorp Vault, AWS Secrets Manager, and Azure Key Vault provide secure storage and access control.
+
+Encrypting secrets: Ensure secrets are encrypted both in transit and at rest.
+
+Limiting access: Use role-based access control (RBAC) to restrict access to secrets.
+
+Auditing access: Monitor and audit access to secrets to detect any unauthorized use.
