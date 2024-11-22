@@ -161,7 +161,8 @@ git reset:- it used for delete/undo the commit changes along with deleting the h
 - idealy used for local repository
 
 git revert- it used for delete/undo commit along creating new commit without deleting history of commit
--advantage is we can track the commits
+
+- advantage is we can track the commits
 - idealy used for remote repos
 
 Q. difference between reset and revert
