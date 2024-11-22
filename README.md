@@ -151,9 +151,25 @@ How do you handle conflicts in Git?
 
 Answer: Conflicts in Git occur when changes from different branches clash. To resolve conflicts, you need to manually edit the conflicted files, marking the changes to keep and removing the conflicting markers, and then commit the resolved changes.
 
-What is Git rebase, and how is it different from Git merge?
+-What is Git rebase, and how is it different from Git merge?
 
 Answer: Git rebase is a command that allows you to move or combine a sequence of commits to a new base commit. It is different from Git merge in that rebase rewrites the commit history to create a linear sequence of commits, while merge preserves the history as is and creates a new merge commit. Rebase is useful for keeping a clean and linear project history.
+
+Q. what is git reset and and git revert
+ans:- 
+git reset:- it used for delete/undo the commit changes along with deleting the history of commit
+- idealy used for local repository
+
+git revert- it used for delete/undo commit along creating new commit without deleting history of commit
+-advantage is we can track the commits
+- idealy used for remote repos
+
+Q. difference between reset and revert
+
+![image](https://github.com/user-attachments/assets/2931599f-92e3-432d-803b-547a9da3a062)
+
+
+
 
 
 ##################GIT########################
